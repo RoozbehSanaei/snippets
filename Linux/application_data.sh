@@ -1,0 +1,1 @@
+sudo nautilus /home/roozbeh/.local/share/applications #this is where your .desktop files are located

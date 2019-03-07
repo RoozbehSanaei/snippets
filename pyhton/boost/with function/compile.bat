@@ -1,0 +1,2 @@
+PATH = C:\Users\ROOZBEH\Downloads\mingw32\bin;C:\Python27;D:\Libraries\boost_1_55_0\stage\lib
+g++ -shared -I  D:\Libraries\boost_1_55_0\ -I C:\Python27\include -I C:\Users\ROOZBEH\Downloads\mingw32\include hello.cpp  -LD:\Libraries\boost_1_55_0\stage\lib\ -LC:\Python27\libs\ -LC:\Users\ROOZBEH\Downloads\mingw32\lib\ -lboost_python-mgw51-mt-1_55 -lpython27 -o hello.pyd   

@@ -1,0 +1,3 @@
+	greeter-session=unity-greeter
+	user-session=ubuntu
+	greeter-show-manual-login=true

@@ -1,0 +1,4 @@
+	# open /etc/lightdm/users.conf and append the following at the end of it.
+	greeter-session=unity-greeter
+	user-session=ubuntu
+	greeter-show-manual-login=true

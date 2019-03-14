@@ -11,5 +11,4 @@ examples_extension = Extension(
 )
 setup(
     name="pyexamples",
-    ext_modules=cythonize([examples_extension])
-)
+    ext_modules=cythonize([examples_extension],gdb_debug=True))

@@ -1,3 +1,6 @@
-from pyexamples import *
-str = b'roozbeh'
-py_hello(str)
+from  point import *
+a = 2
+b = 3
+c = a * b
+print(c)
+print(multiply_p(2,3))

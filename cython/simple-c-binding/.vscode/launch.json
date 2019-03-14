@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Terminal (integrated)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "(gdb) Attach",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "C:/Users/Roozbeh/Anaconda3/python.exe",
+            "additionalSOLibSearchPath":"${workspaceRoot}",
+            "processId": "${command:pickProcess}",
+            "MIMode": "gdb"
+            }
+
+            { 
+                "name": "(gdb) Attach2",
+                "type": "cppdbg",
+                "request": "attach",
+                "program": "C:/Users/Roozbeh/Anaconda3/python.exe",
+                "processId": "${command:pickProcess}",
+                "MIMode": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    }
+                ],
+                "additionalSOLibSearchPath": "${workspaceFolder}/env/lib;${workspaceFolder}/env/lib/python3.6/site-packages/myPythonLib/"
+            }
+    ]
+}

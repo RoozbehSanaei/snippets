@@ -4,6 +4,7 @@ cdef extern from "pointc.c":
         int x
         int y
     Point make_and_send_point(int x, int y)
+    int multiply(int x, int y)
 
 cdef class PyPoint:
     cdef Point p
@@ -18,3 +19,7 @@ cdef class PyPoint:
     @property
     def y(self):
         return self.p.y
+
+def multiply_p(x,y):
+    z = multiply(x,y)
+    return z
